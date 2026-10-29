@@ -3,6 +3,41 @@
 Eleven Claude skills that clone any app. Free, MIT, no signup, no API key,
 nothing to connect.
 
+---
+
+## 🍴 Fork Information
+
+This is a fork of [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill)
+adapted for **OpenCode** plugin usage.
+
+- **Original Repo:** https://github.com/Jakeschincariol/replica-skill
+- **This Fork:** https://github.com/bertugfahriozer/replica-skill
+- **License:** MIT (unchanged)
+
+---
+
+## 🚀 OpenCode Plugin Installation
+
+### For OpenCode Users
+
+```bash
+# Clone or use the plugin directory
+cd /Users/bertugfahriozer/.opencode/replica-skill
+
+# Skills are automatically loaded
+opencode
+```
+
+### For Claude Code Users (Original)
+
+Paste this into Claude:
+
+```
+https://github.com/Jakeschincariol/replica-skill
+
+install skill
+```
+
 One reverse-engineers the app you want to clone. One rebuilds it. One tests it
 for bugs. And one is the Entrepreneur: it reads what the app's users hate and
 fixes it in yours, so you have an app you can sell.
@@ -17,6 +52,22 @@ clean-room style. Not its code, its logo, its copy or its content. The
 fine print is at the bottom, and the skills enforce it.
 
 ## Install
+
+### For OpenCode (This Fork)
+
+Skills are automatically loaded when you use OpenCode. No installation needed!
+
+```bash
+# Just start OpenCode
+opencode
+
+# Use any replica skill
+opencode skill load replica-recon
+opencode skill load replica-architect
+# ... etc
+```
+
+### For Claude Code Users (Original)
 
 Paste this into Claude:
 
@@ -50,6 +101,24 @@ method works.
 The tools need Python 3.8 or newer. Nothing to pip install.
 
 ## The eleven
+
+### For OpenCode
+
+| skill | what it does |
+| --- | --- |
+| `replica-recon` | Reverse-engineers any app: screens, flows, components, data model. |
+| `replica-architect` | Plans the stack, database schema and API for your clone. |
+| `replica-design` | Rebuilds the design system: colours, type, spacing, components. |
+| `replica-build` | Rebuilds the app screen by screen from the recon map. |
+| `replica-backend` | Auth, database, payments and integrations. |
+| `replica-test` | Clicks through every flow and tests it for bugs. |
+| `replica-diff` | Compares your clone against the original. A parity score. |
+| `replica-entrepreneur` | Reads user reviews and turns it into fixes and positioning. |
+| `replica-brand` | Names and rebrands your version so it is yours. |
+| `replica-launch` | Landing page, pricing and App Store listing. |
+| `replica-deploy` | Ships it live on your own domain. |
+
+### For Claude Code (Original)
 
 | command | what it does |
 | --- | --- |
