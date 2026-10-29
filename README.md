@@ -18,14 +18,46 @@ adapted for **OpenCode** plugin usage.
 
 ## 🚀 OpenCode Plugin Installation
 
-### For OpenCode Users
+### Quick Install (One Command)
+
+```bash
+# Run the installer script
+/Users/bertugfahriozer/.opencode/replica-skill/install.sh
+```
+
+That's it! All 11 skills will be automatically loaded.
+
+### Manual Install
 
 ```bash
 # Clone or use the plugin directory
 cd /Users/bertugfahriozer/.opencode/replica-skill
 
-# Skills are automatically loaded
+# Copy skills to OpenCode
+cp -r replica-* /Users/bertugfahriozer/.opencode/skills/
+
+# Start OpenCode
 opencode
+```
+
+### Verify Installation
+
+```bash
+# Check if skills are loaded
+ls /Users/bertugfahriozer/.opencode/skills/ | grep replica
+
+# Expected output:
+# replica-architect
+# replica-backend
+# replica-brand
+# replica-build
+# replica-deploy
+# replica-design
+# replica-diff
+# replica-entrepreneur
+# replica-launch
+# replica-recon
+# replica-test
 ```
 
 ### For Claude Code Users (Original)
